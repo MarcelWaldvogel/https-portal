@@ -37,4 +37,5 @@ RUN chmod a+x /bin/*
 VOLUME /var/lib/https-portal
 VOLUME /var/log/nginx
 
+ENV S6_KEEP_ENV=1
 ENTRYPOINT ["/init"]
